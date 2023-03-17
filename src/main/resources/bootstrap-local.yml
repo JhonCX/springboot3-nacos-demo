@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${rpc.addr}
+        namespace: ${spring.profiles.active}
+      config:
+        server-addr: ${rpc.addr}
+        namespace: ${spring.profiles.active}
+        file-extension: yml
